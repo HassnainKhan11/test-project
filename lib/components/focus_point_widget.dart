@@ -32,6 +32,7 @@ class FocusPointWidget extends StatelessWidget {
       child: Stack(
         children: [
           Positioned(child: Image.asset(AppConstants.smallCardTexture)),
+          Positioned(bottom: 0, right: 0, child: Image.asset(imageUrl)),
           Positioned(
               left: 2.w,
               bottom: 1.h,
@@ -107,7 +108,6 @@ class FocusPointWidget extends StatelessWidget {
                   )
                 ],
               )),
-          Positioned(bottom: 0, right: 0, child: Image.asset(imageUrl))
         ],
       ),
     );
